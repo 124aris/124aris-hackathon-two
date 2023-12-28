@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default  function Firstsetion() {
     return(
-        <div className="grid grid-cols-[40%,60%] mt-5 ml-20 mr-18">
-            <div className="flex flex-col justify-center space-y-8">
+        <div className="grid grid-cols-[40%,60%] mt-8 ml-20 mr-18">
+            <div className="flex flex-col justify-center space-y-10">
                 <div className="flex">
                     <span className="flex bg-[#e1edff] text-blue-700 font-bold px-6 py-2 rounded-md">Sale 70%</span>
                 </div>
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl">An Industrial Take on Streetwear</h1>
-                <p className="text-lg text-muted-foreground">
+                <p className="leading-7 text-[#666] text-lg [&:not(:first-child)]:mt-6">
                 Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
                 </p>
                 <div>

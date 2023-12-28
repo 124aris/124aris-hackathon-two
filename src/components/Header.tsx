@@ -20,7 +20,7 @@ export default function Header() {
         <div>
             <NavigationMenu>
                 <NavigationMenuList>
-                    <div className="flex space-x-14 justify-between font-semibold">
+                    <div className="flex space-x-14 justify-between font-medium">
                         <NavigationMenuItem >
                             <Link href="/female" legacyBehavior passHref>
                                 <NavigationMenuLink>Female</NavigationMenuLink>
