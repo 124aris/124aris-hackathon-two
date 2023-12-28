@@ -20,7 +20,7 @@ export default function Header() {
         <div>
             <NavigationMenu>
                 <NavigationMenuList>
-                    <div className="flex space-x-14 justify-between font-medium">
+                    <div className="flex space-x-14 justify-between font-normal">
                         <NavigationMenuItem >
                             <Link href="/female" legacyBehavior passHref>
                                 <NavigationMenuLink>Female</NavigationMenuLink>
@@ -47,13 +47,15 @@ export default function Header() {
         </div>
         <div className="flex border border-input bg-background items-center">
             <Search className="bg-white rounded-l" />
-            <Input type="text" placeholder="What you looking for" className="rounded-r" />
+            <Input type="text" placeholder="What you looking for"/>
         </div>
-        <div className=" flex p-2 rounded-full relative bg-gray-200">
-            <Link href={"/cart"}>
-                <ShoppingCart />
-                <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">0</span>
-            </Link>
+        <div className="transition ease-in-out hover:scale-110">
+            <div className="flex p-2 rounded-full relative bg-gray-200">
+                <Link href={"/cart"}>
+                    <ShoppingCart />
+                    <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">0</span>
+                </Link>
+            </div>
         </div>
     </nav>
     )

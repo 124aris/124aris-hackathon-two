@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/Header'
-import { Inter as FontSans } from "next/font/google"
-import { cn } from '@/lib/utils'
+import { Sora } from 'next/font/google'
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+const sora = Sora({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Dine Market',
@@ -21,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen bg-background font-sans antialiased",fontSans.variable)}>
+      <body className={sora.className}>
         <div className='py-4 px-12'>
           <Header/>
           {children}
