@@ -1,7 +1,11 @@
-import Firstsetion from "./Firstsection";
+import Firstsection from "./Firstsection";
+import Secondsection from "./Secondsection";
 
 export default  function Homepage() {
     return(
-            <Firstsetion/>
+        <div>
+            <Firstsection/>
+            <Secondsection/>
+        </div>
     );
 };

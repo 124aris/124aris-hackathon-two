@@ -45,9 +45,9 @@ export default function Header() {
                 </NavigationMenuList>
             </NavigationMenu>
         </div>
-        <div className="flex border border-input bg-background items-center">
-            <Search className="bg-white rounded-l" />
-            <Input type="text" placeholder="What you looking for"/>
+        <div className="flex basis-1/3 border bg-background rounded-md items-center h-10">
+            <Search className="bg-white w-5 h-5"/>
+            <Input type="text" placeholder="What you're looking for" className=" border-l-0"/>
         </div>
         <div className="transition ease-in-out hover:scale-110">
             <div className="flex p-2 rounded-full relative bg-gray-200">
