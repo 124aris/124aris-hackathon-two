@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/Header'
 import { Sora } from 'next/font/google'
+import Footer from '@/components/Footer'
 
 const sora = Sora({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className='py-4 px-12'>
           <Header/>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

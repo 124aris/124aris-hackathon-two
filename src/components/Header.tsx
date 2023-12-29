@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <nav className="flex justify-between items-center h-20 px-20">
         <Link href="/">
-            <Image src={"/Logo.webp"} alt="website logo" width={140} height={25} />
+            <Image src={"/Logo.webp"} alt="website logo" width={140} height={25}/>
         </Link>
         <div>
             <NavigationMenu>

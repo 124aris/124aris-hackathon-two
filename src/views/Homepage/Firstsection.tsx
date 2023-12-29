@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 
-export default  function Firstsection() {
+export default function Firstsection() {
     return(
         <div className="grid grid-cols-[40%,60%] mt-8 ml-20 mr-18 font-s">
             <div className="flex flex-col justify-center space-y-10">
