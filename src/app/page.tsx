@@ -1,7 +1,13 @@
-import Homepage from "@/views/Homepage/Homepage"
+import Firstsection from "@/views/Homepage/Firstsection";
+import Secondsection from "@/views/Homepage/Secondsection";
+import Thirdsection from "@/views/Homepage/Thirdsection";
 
 export default function Home() {
   return (
-    <Homepage/>
+    <div>
+      <Firstsection/>
+      <Secondsection/>
+      <Thirdsection/>
+    </div>
   )
 }
