@@ -22,8 +22,8 @@ export default function RootLayout({
         <div className='py-4 px-12'>
           <Header/>
           {children}
-          <Footer/>
         </div>
+        <Footer/>
       </body>
     </html>
   )
