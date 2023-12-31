@@ -2,11 +2,15 @@ import ProductsList from "@/Products/Productslist"
 import Link from "next/link"
 import Image from "next/image"
 
-export default function Productspage() {
+export default function Femalepage() {
+    const femaleProducts = ProductsList.filter(
+        (product) => product.ProductCategory === "Female"
+      );
+
     return(
         <main className="mt-12">
             <div className="grid grid-cols-4 ml-20">
-                {ProductsList.map(product => (
+                {femaleProducts.map(product => (
                     <div key={product.ID} className=" mb-16">
                     <Link href={`/product/${product.ProductName}`}>
                         <div className="flex flex-col">
