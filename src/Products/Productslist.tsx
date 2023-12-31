@@ -1,4 +1,4 @@
-const ItemsList = [
+const ProductsList = [
     {
         ID: 1,
         ProductName: "Brushed Raglan Sweatshirt",
@@ -166,4 +166,4 @@ const ItemsList = [
     },
 ];
 
-export default ItemsList;
+export default ProductsList;
