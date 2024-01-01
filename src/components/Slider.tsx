@@ -28,14 +28,13 @@ export default function Productsswiper() {
                 modules={[Navigation, A11y]}
                 spaceBetween={0}
                 slidesPerView={3}
-                className="relative"
             >
                 {ProductsList?.map(product => (
                     <SwiperSlide key={product.ID}>
                         <Link href={`/product/${product.ProductName}`}>
                             <div className="py-8 transform-gpu hover:scale-110 transition-transform duration-500 ease-in-out">
                                 <Image src={product.ProductPicture1} alt='' width={380} height={400}/>
-                                <div className='hover:ml-4 text-lg font-semibold text-[#212121] mt-3'>
+                                <div className='text-lg font-semibold text-[#212121] mt-3'>
                                     <p>{product.ProductName}</p>
                                     <p>${product.Price}</p>
                                 </div>
