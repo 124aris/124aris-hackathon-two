@@ -1,4 +1,4 @@
-import ProductsList from "@/Products/Productslist";
+import ProductsList from "@/products/Productslist";
 
 export async function generateStaticParams() {
   return ProductsList.map((product) => ({

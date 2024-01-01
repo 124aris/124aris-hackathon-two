@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import ProductsList from "@/Products/Productslist"
+import ProductsList from "@/products/Productslist"
 import Link from 'next/link';
 import Image from 'next/image';
 
