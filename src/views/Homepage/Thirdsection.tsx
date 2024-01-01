@@ -34,7 +34,7 @@ export default function Thirdsection() {
             </div>
             <div className='flex ml-20 mr-20 mt-14'>
                 <div>
-                    <Link href={''}>
+                    <Link href={'/product/'}>
                         <Image src={ProductsList[0].ProductPicture1} alt='' width={380} height={400}/>
                         <div className='text-lg font-semibold text-[#212121] mt-3'>
                             <p>{ProductsList[0].ProductName}</p>
@@ -43,7 +43,7 @@ export default function Thirdsection() {
                     </Link>
                 </div>
                 <div>
-                    <Link href={''}>
+                    <Link href={'/product/'}>
                         <Image src={ProductsList[1].ProductPicture1} alt='' width={380} height={400}/>
                         <div className='text-lg font-semibold text-[#212121] mt-3'>
                             <p>{ProductsList[1].ProductName}</p>
@@ -52,7 +52,7 @@ export default function Thirdsection() {
                     </Link>
                 </div>
                 <div>
-                    <Link href={''}>
+                    <Link href={'/product/'}>
                         <Image src={ProductsList[2].ProductPicture1} alt='' width={380} height={400}/>
                         <div className='text-lg font-semibold text-[#212121] mt-3'>
                             <p>{ProductsList[2].ProductName}</p>
