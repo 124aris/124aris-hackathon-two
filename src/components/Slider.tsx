@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export default function Productsswiper() {
     return (
-        <div className='px-20'>
+        <div className='px-20 mt-8'>
             <Swiper
                 breakpoints={{
                     300: {
