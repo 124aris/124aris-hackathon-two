@@ -12,7 +12,7 @@ export default function Malepage() {
             <div className="grid grid-cols-4 ml-20">
                 {maleProducts.map(product => (
                     <div key={product.ID} className=" mb-16">
-                    <Link href={`/product/${product.ProductName}`}>
+                    <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>
                         <div className="flex flex-col">
                             <Image src={product.ProductPicture1} alt={product.ProductName} width={250} height={270}/>
                             <p className='text-lg font-semibold text-[#212121] mt-2'>{product.ProductName}</p>
