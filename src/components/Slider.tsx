@@ -33,7 +33,7 @@ export default function Productsswiper() {
                     <SwiperSlide key={product.ID}>
                         <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>
                             <div className="py-8 transform-gpu hover:scale-110 transition-transform duration-500 ease-in-out">
-                                <Image src={product.ProductPicture1} alt='' width={380} height={400}/>
+                                <Image src={product.ProductPicture[0]} alt='' width={380} height={400}/>
                                 <div className='text-lg font-semibold text-[#212121] mt-3'>
                                     <p>{product.ProductName}</p>
                                     <p>${product.Price}</p>

@@ -14,7 +14,7 @@ export default function Kidspage() {
                     <div key={product.ID} className=" mb-16">
                     <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>
                         <div className="flex flex-col">
-                            <Image src={product.ProductPicture1} alt={product.ProductName} width={250} height={270}/>
+                            <Image src={product.ProductPicture[0]} alt={product.ProductName} width={250} height={270}/>
                             <p className='text-lg font-semibold text-[#212121] mt-2'>{product.ProductName}</p>
                             <p className="text-base font-semibold text-[#888] mb-2 mt-1">{product.ProductType}</p>
                             <p className='text-xl font-semibold text-[#212121]'>${product.Price}</p>

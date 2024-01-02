@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { productname: string } }) {
   );
   return (
     <main>
-      <div>
+      <div className="px-20">
         {Product[0].ProductName}
       </div>
     </main>
