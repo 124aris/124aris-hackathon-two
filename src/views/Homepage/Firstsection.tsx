@@ -15,7 +15,7 @@ export default function Firstsection() {
                 Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
                 </p>
                 <div>
-                    <Button className="space-x-4 not rounded-none py-8 px-5">
+                    <Button className="space-x-4 rounded-none py-8 px-5">
                         <ShoppingCart/>
                         <Link href="/products" className="font-bold text-lg">Start Shopping</Link>
                     </Button>

@@ -12,7 +12,9 @@ export default function Page({ params }: { params: { productname: string } }) {
   );
   return (
     <main>
-      
+      <div>
+        {Product[0].ProductName}
+      </div>
     </main>
   );
 }
