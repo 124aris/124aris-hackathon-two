@@ -2,10 +2,9 @@ import InputWithButton from "@/components/InputButton"
 
 export default function Fifthsection() {
     return (
-        <main className="flex justify-center items-center flex-col">
-            <div className="font-extrabold text-7xl leading-151 text-gray-100 absolute z-[-1]">Newsletter</div>
-            <h1>Subscribe Our Newsletter</h1>
-            <p>Get the latest information and promo offers directly</p>
+        <main className="flex justify-center items-center flex-col py-20">
+            <h1 className="text-4xl font-bold text-[#212121] mb-4">Subscribe Our Newsletter</h1>
+            <p className="font-light text-base text-[#212121] mb-8">Get the latest information and promo offers directly</p>
             <InputWithButton/>
         </main>
     )
