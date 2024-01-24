@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Footer() {
     return(
         <main>
-            <div className="grid grid-cols-[30%,1fr,1fr,1fr] px-24 ml-6 pb-44 pt-28">
+            <div className="grid grid-cols-[30%,1fr,1fr,1fr] px-28 ml-6 pb-40 pt-28">
                 <div className="flex flex-col space-y-10">
                     <Image src={"/Logo.webp"} alt="website logo" width={180} height={30}/>
                     <p className="font-normal text-base text-[#666]">Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>

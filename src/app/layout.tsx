@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sora.className}>
-        <div className='py-4 px-12'>
+        <div>
           <Header/>
           {children}
         </div>

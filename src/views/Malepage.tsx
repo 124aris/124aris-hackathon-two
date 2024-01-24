@@ -8,8 +8,8 @@ export default function Malepage() {
       );
 
     return(
-        <main className="mt-12">
-            <div className="grid grid-cols-4 ml-20">
+        <main className="mt-16">
+            <div className="grid grid-cols-4 ml-32">
                 {maleProducts.map(product => (
                     <div key={product.ID} className=" mb-16">
                     <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>

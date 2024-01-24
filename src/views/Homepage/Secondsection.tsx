@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Secondsection() {
     return(
-        <div className=" py-28">
+        <div className="py-28 mx-14">
             <div className="flex flex-col items-center justify-center space-y-5">
                 <span className="text-xs text-blue-600 font-bold">PROMOTIONS</span>
                 <h2 className="scroll-m-20 pb-2 text-4xl font-bold tracking-tight first:mt-0">Our Promotions Events</h2>

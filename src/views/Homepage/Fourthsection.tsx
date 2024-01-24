@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Fourthsection() {
     return (
-        <main className="px-20 py-32">
+        <main className="px-32 py-32">
             <div className="px-2 flex justify-end items-center font-bold text-[#212121] text-5xl">
                 <h1 className="basis-1/2">Unique and Authentic Vintage Designer Jewellery</h1>
             </div>

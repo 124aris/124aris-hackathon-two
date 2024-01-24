@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Firstsection() {
     return(
-        <div className="grid grid-cols-[40%,60%] mt-8 ml-20 mr-18 font-s">
+        <div className="grid grid-cols-[40%,60%] mt-12 ml-32 mr-24 font-s">
             <div className="flex flex-col justify-center space-y-10">
                 <div className="flex">
                     <span className="flex bg-[#e1edff] text-blue-600 font-bold px-6 py-2 rounded-md">Sale 70%</span>
