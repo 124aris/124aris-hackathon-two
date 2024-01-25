@@ -58,23 +58,25 @@ export default function Productpage(Product:{ ID: number; ProductName: string; P
           </div>
         </div>
       </div>
-      <div className="flex flex-col mx-32 justify-center bg-white">
-        <div>
-          <h2>Product Information</h2>
+      <div className="flex flex-col mx-32 justify-center bg-white mt-16 gap-8 px-16 pt-8 pb-24">
+        <div className="flex items-center relative w-full h-40 border-b-2 border-[#C4C4C4]">
+          <h2 className="mt-8 font-bold text-2xl leading-6 tracking-wide text-[#212121] pb-12 absolute top-2/4 transform -translate-y-2/4 z-10">Product Information</h2>
+          <p className="mt-28 font-extrabold text-9xl leading-9 text-[#f2f3f7] opacity-70 absolute z-0 w-full h-full">Overview</p>
         </div>
-        <div className="flex">
-          <h4>PRODUCT DETAILS</h4>
-          <p>{Product[0].ProductDetails}</p>
+        <div className="flex justify-between">
+          <h4 className="font-bold text-base leading-5 tracking-wide text-[#666666]">PRODUCT DETAILS</h4>
+          <p className="basis-2/3 font-light text-base leading-6 text-justify tracking-wide text-[#212121]">{Product[0].ProductDetails}</p>
         </div>
-        <div className="flex">
-          <h4>PRODUCT CARE</h4>
-          <ul className="ml-6 list-disc">
+        <div className="flex justify-between">
+          <h4 className="font-bold text-base leading-5 tracking-wide text-[#666666]">PRODUCT CARE</h4>
+          <ul className="basis-2/3 ml-6 list-disc">
             {Product[0].ProductCare.map((list, indexx) => (
-              <li key={indexx}>{list}</li>
+              <li key={indexx} className="font-semibold list-inside text-base leading-6 text-justify tracking-wide text-[#212121]">{list}</li>
             ))}
           </ul>
         </div>
       </div>
+      <div className="p-8"></div>
     </main>
   )
 }
