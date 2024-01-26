@@ -10,17 +10,18 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+import "@/styles/header.css"
 
 export default function Header() {
   return (
-    <nav className="flex justify-between items-center h-20 px-32 pt-4">
+    <nav className="header">
         <Link href="/">
             <Image src={"/Logo.webp"} alt="website logo" width={140} height={25}/>
         </Link>
         <div>
             <NavigationMenu>
                 <NavigationMenuList>
-                    <div className="flex space-x-14 justify-between font-normal">
+                    <div className="routes">
                         <NavigationMenuItem >
                             <Link href="/female" legacyBehavior passHref>
                                 <NavigationMenuLink>Female</NavigationMenuLink>
@@ -45,15 +46,15 @@ export default function Header() {
                 </NavigationMenuList>
             </NavigationMenu>
         </div>
-        <div className="flex basis-1/3 border bg-background rounded-md items-center h-10">
-            <Search className="bg-white w-5 h-5"/>
-            <Input type="text" placeholder="What you're looking for" className=" border-l-0"/>
+        <div className="input-search">
+            <Search className="search"/>
+            <Input type="text" placeholder="What you're looking for" className="input"/>
         </div>
-        <div className="transition ease-in-out hover:scale-110">
-            <div className="flex p-2 rounded-full relative bg-gray-200">
+        <div className="fullcart">
+            <div className="cart">
                 <Link href={"/cart"}>
                     <ShoppingCart />
-                    <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-4 h-4 flex items-center justify-center text-xs">0</span>
+                    <span className="number">0</span>
                 </Link>
             </div>
         </div>
