@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-slider {
+    @apply px-36
+}
+
+.main-slider .card {
+    @apply py-8 transform-gpu hover:scale-110 transition-transform duration-500 ease-in-out
+}
+
+.main-slider .card .text {
+    @apply text-lg font-semibold text-[#212121] mt-3
+}

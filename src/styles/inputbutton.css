@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-button {
+    @apply flex w-full max-w-md items-center space-x-3
+}
+
+.input-button .input {
+    @apply border-gray-600 rounded-none
+}
+
+.input-button .button {
+    @apply rounded-none px-5 bg-black
+}

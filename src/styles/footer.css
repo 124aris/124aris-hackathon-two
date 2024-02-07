@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-top-section {
+    @apply grid grid-cols-[30%,1fr,1fr,1fr] px-28 ml-6 pb-40 pt-16
+}
+
+.footer-top-section .left {
+    @apply flex flex-col space-y-10
+}
+
+.footer-top-section .left .description {
+    @apply font-normal text-base text-[#666]
+}
+
+.footer-top-section .left .social-buttons {
+    @apply flex space-x-4
+}
+
+.footer-top-section .left .social-buttons .button {
+    @apply bg-[#f1f1f1] text-black rounded-lg hover:bg-[#f1f1f1] hover:text-black
+}
+
+.footer-top-section .left .social-buttons .button .logo {
+    @apply fill-black w-5 h-5
+}
+
+.footer-top-section .right-sections {
+    @apply flex flex-col space-y-5 px-14
+}
+
+.footer-top-section .right-sections .headings {
+    @apply font-bold text-xl text-[#666]
+}
+
+.footer-top-section .right-sections .list {
+    @apply font-normal text-[#666] text-base space-y-3
+}
+
+.footer-bottom-section {
+    @apply flex justify-around items-center border-t border-[#666] p-8
+}
+
+.footer-bottom-section .text {
+    @apply font-normal text-base text-[#666]
+}
+
+.footer-bottom-section .text .bold {
+    @apply font-bold text-[#212121]
+}

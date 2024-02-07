@@ -6,10 +6,11 @@ import 'swiper/css/navigation';
 import ProductsList from '@/utils/Productslist';
 import Image  from 'next/image';
 import Link from 'next/link';
+import "@/styles/slider.css"
 
 export default function Productsswiper() {
     return (
-        <div className='px-36'>
+        <div className='main-slider'>
             <Swiper
                 breakpoints={{
                     300: {
@@ -32,9 +33,9 @@ export default function Productsswiper() {
                 {ProductsList?.map(product => (
                     <SwiperSlide key={product.ID}>
                         <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>
-                            <div className="py-8 transform-gpu hover:scale-110 transition-transform duration-500 ease-in-out">
+                            <div className="card">
                                 <Image src={product.ProductPicture[0]} alt='' width={380} height={400}/>
-                                <div className='text-lg font-semibold text-[#212121] mt-3'>
+                                <div className='text'>
                                     <p>{product.ProductName}</p>
                                     <p>${product.Price}</p>
                                 </div>

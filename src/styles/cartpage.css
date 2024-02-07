@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-cart {
+    @apply px-32 pb-32
+}
+
+.main-cart .heading {
+    @apply scroll-m-20 pb-2 text-2xl font-bold tracking-tight py-24 ml-12
+}
+
+.main-cart .message {
+    @apply flex flex-col justify-center items-center mt-8
+}
+
+.main-cart .message .icon {
+    @apply w-32 h-32
+}
+
+.main-cart .message .sentence {
+    @apply scroll-m-20 text-3xl font-bold tracking-tight mt-2
+}

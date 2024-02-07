@@ -1,6 +1,7 @@
 import ProductsList from "@/utils/Productslist"
 import Link from "next/link"
 import Image from "next/image"
+import "@/styles/productscategory.css"
 
 export default function Femalepage() {
     const femaleProducts = ProductsList.filter(
@@ -8,16 +9,16 @@ export default function Femalepage() {
       );
 
     return(
-        <main className="mt-16">
-            <div className="grid grid-cols-4 ml-32">
+        <main className="category-page">
+            <div className="alignment">
                 {femaleProducts.map(product => (
-                    <div key={product.ID} className=" mb-16">
+                    <div key={product.ID} className="card">
                     <Link href={`/product/${product.ProductName.replace(/\s+/g, '-')}`}>
-                        <div className="flex flex-col">
+                        <div className="content">
                             <Image src={product.ProductPicture[0]} alt={product.ProductName} width={250} height={270}/>
-                            <p className='text-lg font-semibold text-[#212121] mt-2'>{product.ProductName}</p>
-                            <p className="text-base font-semibold text-[#888] mb-2 mt-1">{product.ProductType}</p>
-                            <p className='text-xl font-semibold text-[#212121]'>${product.Price}</p>
+                            <p className='name'>{product.ProductName}</p>
+                            <p className="type">{product.ProductType}</p>
+                            <p className='price'>${product.Price}</p>
                         </div>
                     </Link>
                     </div>

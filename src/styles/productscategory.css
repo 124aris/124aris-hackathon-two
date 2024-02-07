@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.category-page {
+    @apply mt-16
+}
+
+.category-page .alignment {
+    @apply grid grid-cols-4 ml-32
+}
+
+.category-page .alignment .card {
+    @apply mb-16
+}
+
+.category-page .alignment .card .content {
+    @apply flex flex-col
+}
+
+.category-page .alignment .card .content .name {
+    @apply text-lg font-semibold text-[#212121] mt-2
+}
+
+.category-page .alignment .card .content .type {
+    @apply text-base font-semibold text-[#888] mb-2 mt-1
+}
+
+.category-page .alignment .card .content .price {
+    @apply text-xl font-semibold text-[#212121]
+}

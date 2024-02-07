@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-background {
+    @apply bg-[#FCFCFC] mt-8
+}
+
+.main-background .product-description {
+    @apply flex px-32 justify-normal pt-16
+}
+
+.main-background .product-description .image {
+    @apply flex gap-8
+}
+
+.main-background .product-description .image .small-container {
+    @apply flex flex-col gap-4
+}
+
+.main-background .product-description .image .small-container .small-image {
+    @apply cursor-pointer
+}
+
+.main-background .product-description .image .large-container {
+    @apply w-4/5 h-full
+}
+
+.main-background .product-description .information .top .name {
+    @apply font-normal text-3xl text-[#212121] pt-16
+}
+
+.main-background .product-description .information .top .type {
+    @apply font-semibold text-xl opacity-30
+}
+
+.main-background .product-description .information .size-container .size {
+    @apply font-bold text-sm text-[#212121] pt-8
+}
+
+.main-background .product-description .information .size-container .tag-container {
+    @apply flex gap-4 py-4
+}
+
+.main-background .product-description .information .size-container .tag-container .tag {
+    @apply flex font-bold w-10 h-10 justify-center items-center cursor-pointer rounded-full text-base text-[#666666] hover:shadow-md
+}
+
+.main-background .product-description .information .quantity-container {
+    @apply flex gap-8 items-center pt-4
+}
+
+.main-background .product-description .information .quantity-container .quantity {
+    @apply font-extrabold text-base text-[#212121]
+}
+
+.main-background .product-description .information .quantity-container .value {
+    @apply flex items-center space-x-2.5
+}
+
+.main-background .product-description .information .quantity-container .value .button {
+    @apply p-2 rounded-full border-solid border-[#F1F1F1] bg-[#F1F1F1] text-gray-600 hover:bg-[#F1F1F1]
+}
+
+.main-background .product-description .information .container {
+    @apply flex items-center gap-4 pt-8
+}
+
+.main-background .product-description .information .container .cart-button {
+    @apply rounded-none
+}
+
+.main-background .product-description .information .container .price {
+    @apply font-bold text-2xl text-[#212121]
+}
+
+.main-background .product-overview {
+    @apply flex flex-col mx-32 justify-center bg-white mt-16 gap-8 px-16 pt-8 pb-24
+}
+
+.main-background .product-overview .heading-container {
+    @apply flex items-center relative w-full h-40 border-b-2 border-[#C4C4C4]
+}
+
+.main-background .product-overview .heading-container .heading {
+    @apply mt-8 font-bold text-2xl leading-6 tracking-wide text-[#212121] pb-12 absolute top-2/4 transform -translate-y-2/4 z-10
+}
+
+.main-background .product-overview .heading-container .background {
+    @apply mt-28 font-extrabold text-9xl leading-9 text-[#f2f3f7] opacity-70 absolute z-0 w-full h-full
+}
+
+.main-background .product-overview .sub-container {
+    @apply flex justify-between
+}
+
+.main-background .product-overview .sub-container .sub-heading {
+    @apply font-bold text-base leading-5 tracking-wide text-[#666666]
+}
+
+.main-background .product-overview .sub-container .text {
+    @apply basis-2/3 font-light text-base leading-6 text-justify tracking-wide text-[#212121]
+}
+
+.main-background .product-overview .sub-container .list-container {
+    @apply basis-2/3 ml-6 list-disc
+}
+
+.main-background .product-overview .sub-container .list-container .list {
+    @apply font-semibold list-inside text-base leading-6 text-justify tracking-wide text-[#212121]
+}
+
+.main-background .bottom {
+    @apply p-8
+}

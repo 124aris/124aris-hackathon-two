@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.first-section {
+    @apply grid grid-cols-[40%,60%] mt-12 ml-32 mr-24
+}
+
+.first-section .left-side {
+    @apply flex flex-col justify-center space-y-10
+}
+
+.first-section .left-side .sale-container {
+    @apply flex
+}
+
+.first-section .left-side .sale-container .sale {
+    @apply flex bg-[#e1edff] text-blue-600 font-bold px-6 py-2 rounded-md
+}
+
+.first-section .left-side .headline {
+    @apply scroll-m-20 text-4xl text-[#212121] font-extrabold tracking-tight lg:text-6xl
+}
+
+.first-section .left-side .headline-text {
+    @apply leading-7 text-[#666] text-lg [&:not(:first-child)]:mt-6
+}
+
+.first-section .left-side .button-container .button {
+    @apply space-x-4 rounded-none py-8 px-5
+}
+
+.first-section .left-side .button-container .button .button-text {
+    @apply font-bold text-lg
+}
+
+.first-section .left-side .images {
+    @apply grid grid-cols-4
+}
+
+.first-section .right-side {
+    @apply flex items-center justify-center
+}
+
+.first-section .right-side .background-circle {
+    @apply rounded-full bg-[#ffece3]
+}
+
+.second-section {
+    @apply py-28 mx-14
+}
+
+.second-section .top {
+    @apply flex flex-col items-center justify-center space-y-5
+}
+
+.second-section .top .promotions {
+    @apply text-xs text-blue-600 font-bold
+}
+
+.second-section .top .promotions-headline {
+    @apply scroll-m-20 pb-2 text-4xl font-bold tracking-tight first:mt-0
+}
+
+.second-section .bottom {
+    @apply flex justify-center space-x-8 items-stretch py-7
+}
+
+.second-section .bottom .left-part {
+    @apply flex flex-col basis-2/5 space-y-4
+}
+
+.second-section .bottom .left-part .top-card {
+    @apply flex bg-[#d6d6d8] justify-between items-center
+}
+
+.second-section .bottom .left-part .top-card .card {
+    @apply flex flex-col items-center justify-center ml-8
+}
+
+.second-section .bottom .left-part .top-card .card .card-head {
+    @apply text-3xl font-bold tracking-tight
+}
+
+.second-section .bottom .left-part .top-card .card .card-head .bold {
+    @apply text-4xl font-extrabold
+}
+
+.second-section .bottom .left-part .top-card .card .card-text {
+    @apply leading-7 font-normal text-lg
+}
+
+.second-section .bottom .left-part .top-card .card-image {
+    @apply mr-8
+}
+
+.second-section .bottom .left-part .bottom-card {
+    @apply flex flex-col justify-center items-center bg-[#212121] text-white py-12 px-8
+}
+
+.second-section .bottom .left-part .bottom-card .head {
+    @apply text-4xl font-extrabold tracking-tight
+}
+
+.second-section .bottom .left-part .bottom-card .content {
+    @apply leading-7 font-normal text-sm [&:not(:first-child)]:mt-4
+}
+
+.second-section .bottom .left-part .bottom-card .card-button {
+    @apply px-12 font-bold text-base bg-[#474747] text-white hover:bg-[#474747] hover:text-white
+}
+
+.second-section .bottom .right-part {
+    @apply flex space-x-4
+}
+
+.second-section .bottom .right-part .left-card {
+    @apply flex flex-col bg-[#efe1c7] justify-end
+}
+
+.second-section .bottom .right-part .left-card .information {
+    @apply ml-5 mb-4
+}
+
+.second-section .bottom .right-part .left-card .information .name {
+    @apply leading-7 [&:not(:first-child)]:mt-6
+}
+
+.second-section .bottom .right-part .left-card .information .price {
+    @apply flex items-center
+}
+
+.second-section .bottom .right-part .left-card .information .price .position {
+    @apply relative
+}
+
+.second-section .bottom .right-part .left-card .information .price .position .old-price {
+    @apply font-normal text-base
+}
+
+.second-section .bottom .right-part .left-card .information .price .position .cut {
+    @apply absolute bottom-3 h-full w-full border-b border-black
+}
+
+.second-section .bottom .right-part .left-card .information .price .new-price {
+    @apply text-lg font-semibold ml-2
+}
+
+.second-section .bottom .right-part .right-card {
+    @apply flex flex-col bg-[#d7d7d9] justify-end
+}
+
+.second-section .bottom .right-part .right-card .card-content {
+    @apply ml-5 mb-2
+}
+
+.second-section .bottom .right-part .right-card .card-content .name {
+    @apply leading-7 [&:not(:first-child)]:mt-6
+}
+
+.second-section .bottom .right-part .right-card .card-content .price {
+    @apply flex items-center
+}
+
+.second-section .bottom .right-part .right-card .card-content .price .position {
+    @apply relative
+}
+
+.second-section .bottom .right-part .right-card .card-content .price .position .old-price {
+    @apply font-normal text-base
+}
+
+.second-section .bottom .right-part .right-card .card-content .price .position .cut {
+    @apply absolute bottom-3 h-full w-full border-b border-black
+}
+
+.second-section .bottom .right-part .right-card .card-content .price .new-price {
+    @apply text-lg font-semibold ml-2
+}
+
+.third-section .swiper-container {
+    @apply flex flex-col items-center justify-center space-y-5
+}
+
+.third-section .swiper-container .products {
+    @apply text-xs text-blue-600 font-bold
+}
+
+.third-section .swiper-container .swiper-text {
+    @apply scroll-m-20 pb-2 text-4xl font-bold tracking-tight first:mt-0
+}
+
+.fourth-section {
+    @apply mb-32 mt-16
+}
+
+.fourth-section .background-gradient {
+    @apply bg-gradient-to-b from-white via-white to-[#FBFCFF]
+}
+
+.fourth-section .background-gradient .heading {
+    @apply px-36 flex justify-end font-bold text-[#212121] text-5xl
+}
+
+.fourth-section .background-gradient .heading .heading-text {
+    @apply basis-1/2
+}
+
+.fourth-section .background-color {
+    @apply bg-[#FBFCFF] pb-16
+}
+
+.fourth-section .background-color .outlines {
+    @apply grid grid-cols-2 pt-10 px-32
+}
+
+.fourth-section .background-color .outlines .features {
+    @apply grid grid-cols-2 justify-around items-center relative
+}
+
+.fourth-section .background-color .outlines .features .background-text {
+    @apply font-extrabold text-8xl absolute text-[#212121] opacity-5 z-10
+}
+
+.fourth-section .background-color .outlines .features .feature-section {
+    @apply flex flex-col mr-20 space-y-4 z-10
+}
+
+.fourth-section .background-color .outlines .features .feature-section .feature {
+    @apply font-semibold text-lg text-[#212121]
+}
+
+.fourth-section .background-color .outlines .features .feature-section .text {
+    @apply font-light text-base text-[#212121]
+}
+
+.fourth-section .background-color .outlines .about {
+    @apply flex
+}
+
+.fourth-section .background-color .outlines .about .about-section {
+    @apply flex flex-col justify-center text-justify space-y-10 ml-10
+}
+
+.fourth-section .background-color .outlines .about .about-section .text {
+    @apply font-light text-base text-[#212121]
+}
+
+.fourth-section .background-color .outlines .about .about-section .about-button {
+    @apply flex font-semibold text-sm rounded-none
+}
+
+.fourth-section .background-color .outlines .about .about-section .about-button .about-text {
+    @apply font-bold text-lg
+}
+
+.fifth-section {
+    @apply flex justify-center items-center flex-col pt-20 pb-40 relative
+}
+
+.fifth-section .background-newsletter {
+    @apply font-extrabold text-9xl leading-9 text-[#f2f3f7] absolute z-0
+}
+
+.fifth-section .newsletter-container {
+    @apply z-10
+}
+
+.fifth-section .newsletter-container .newsletter {
+    @apply text-4xl font-bold text-[#212121] mb-4
+}
+
+.fifth-section .newsletter-container .newsletter-text {
+    @apply font-light text-base text-[#212121] mb-8
+}
