@@ -9,7 +9,7 @@ export default function Footer() {
         <main>
             <div className="footer-top-section">
                 <div className="left">
-                    <Image src={"/Logo.webp"} alt="website logo" width={180} height={30}/>
+                    <Image src={"/logo.webp"} alt="website logo" width={180} height={30}/>
                     <p className="description">Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
                     <div className="social-buttons">
                         <Button className="button">
